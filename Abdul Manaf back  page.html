@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Coding Portfolio</title>
+  <style>
+    /* ---------- Global Styles ---------- */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.3rem;
+    }
+    header p {
+      font-size: 1rem;
+      color: #bbb;
+    }
+    nav {
+      background: #222;
+      text-align: center;
+      padding: 0.7rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    /* ---------- Sections ---------- */
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #111;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #00bcd4;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* ---------- About ---------- */
+    .about {
+      text-align: center;
+    }
+    .about img {
+      width: 140px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #00bcd4;
+    }
+
+    /* ---------- Skills ---------- */
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .skill {
+      background: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-weight: 600;
+      transition: transform 0.2s;
+    }
+    .skill:hover {
+      transform: scale(1.05);
+      background: #00bcd4;
+      color: white;
+    }
+
+    /* ---------- Projects ---------- */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+    .project h3 {
+      margin-bottom: 10px;
+      color: #00bcd4;
+    }
+    /* ---------- Channel ---------- */
+    .Channle {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+     .Channle{
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+    .Channle h3 {
+      margin-bottom: 10px;
+      color: #00bcd4;
+    }
+
+    /* ---------- Contact ---------- */
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      width: 100%;
+    }
+    button {
+      background: #00bcd4;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    button:hover {
+      background: #0097a7;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      text-align: center;
+      background: #111;
+      color: #fff;
+      padding: 1rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>My Coding Portfolio</h1>
+    <p>Web Developer | Programmer | Designer</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+       <img src="anas.jpg" alt="Profile Picture">
+    <h2>About Me</h2>
+    <p>Hello! My name is Muhammad Anas and I am a passionate and dedicated digital creator with experience in multiple creative and technical fields. I specialize in video editing, web development, and digital content creation. I am also proficient in MS Word, Blender, and other essential digital tools that help me produce high-quality and professional work.
+ </p>
+        <div>   ...............................................................</div>
+      <p>I run my own YouTube channels, where I create, edit, and manage engaging videos for my audience. Alongside my YouTube journey, I have developed strong skills in website design and development, building responsive and modern websites that reflect creativity and functionality.</p>
+         <div>      ...............................................................                                    </div>
+          <p>Through my experience working at a Digital Center, I have learned how to collaborate effectively with clients, manage projects efficiently, and deliver excellent results on time. Over time, I have completed several projects that demonstrate my ability to combine design, technology, and creativity to produce impactful digital solutions.</p>
+              <div>...................................................................</div>
+                 <p>Below, you can explore some of my completed projects that showcase my skills and dedication.</p>
+                 <div>.................................................................</div>
+
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2> My Skills</h2>
+    <div class="skills">
+      <div class="skill">Video Editer</div>
+      <div class="skill">Ms Word</div>
+      <div class="skill">Youtuber</div>
+      <div class="skill">Digital Creater</div>
+      <div class="skill">Web  development</div>
+      <div class="skill">Blender</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>Welcome to my portfolio website! I’m a passionate and creative individual dedicated to delivering high-quality work that reflects both skill and imagination. Here, you’ll find a collection of my projects that showcase my expertise, creativity, and attention to detail. I believe in continuous learning and strive to improve with every project I take on — creating meaningful work that inspires and connects with people.</p>
+         </div>
+      <div class="project">
+        <h3> Blender</h3>
+        <p>Welcome to my Blender portfolio! I’m a 3D artist passionate about turning imagination into reality through modeling, animation, and rendering. Using Blender, I create detailed scenes, lifelike textures, and cinematic visuals that tell powerful stories. Each project I work on reflects my creativity, technical skills, and dedication to bringing ideas to life in three dimensions.</p>
+         </div>
+      <div class="project">
+        <h3> Video Editer</h3>
+        <p>A video editor is a visual storyteller who manipulates and combines video files to create a finished product. The role involves reviewing raw footage, choosing the best takes, and layering audio, music, and graphics to ensure a seamless flow that conveys a specific message or emotion./p>
+         </div>
+      <div class="project">
+        <h3> Web development</h3>
+        <p>Web development is the technical process of building and maintaining websites. It ranges from "Front-end" development (designing the visual layout and user interface using code) to "Back-end" development (managing the server, database, and logic that powers the site's functionality).</p>
+      </div><div class="project">
+        <h3>YouTuber</h3>
+        <p>A YouTuber is a content strategist and brand manager who produces video content specifically for the YouTube platform. This role requires a blend of audience research, search engine optimization (SEO) for video titles and tags, community engagement, and the ability to analyze performance metrics to grow a channel’s reach.</p>
+      </div><div class="project">
+        <h3> MS Word </h3>
+        <p>Microsoft Word is the industry standard for word processing and professional documentation. Proficiency in this tool involves creating, formatting, and editing text-based documents such as reports, resumes, and formal letters. It includes using advanced features like styles, track changes, mail merge, and document security.</p>
+         </div>
+          </div>
+  </section>
+ <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My Coding Portfolio | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

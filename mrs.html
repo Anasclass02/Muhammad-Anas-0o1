@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRS - Muslim Revive Skills | Academy & Consultancy</title>
+    <meta name="description" content="Muslim Revive Skills (MRS) is an academy and professional team dedicated to reviving essential skills from Quran, Seerah, and modern science.">
+    <meta name="keywords" content="MRS, Muslim Revive Skills, skills academy, AI, IT training, consultancy, portfolio, Pakistan, Quran, Seerah, career development">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #001f3f 0%, #2d5a7f 100%);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #ffcc00 0%, #ffaa00 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 204, 0, 0.3);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .skill-bar {
+            transition: width 1.5s ease-in-out;
+        }
+        
+        .modal {
+            transition: all 0.3s ease;
+        }
+        
+        .modal.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-lg z-50" role="navigation" aria-label="Main navigation">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center text-white font-bold text-xl" aria-label="MRS Logo">MRS</div>
+                    <span class="ml-3 text-xl font-semibold text-blue-800">Muslim Revive Skills</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8" role="menubar">
+                    <a href="#home" class="text-blue-800 hover:text-blue-600 transition-colors" role="menuitem" aria-label="Navigate to home section">Home</a>
+                    <a href="#about" class="text-blue-800 hover:text-blue-600 transition-colors" role="menuitem" aria-label="Navigate to about section">About</a>
+                    <a href="#team" class="text-blue-800 hover:text-blue-600 transition-colors" role="menuitem" aria-label="Navigate to team section">Team</a>
+                    <a href="#portfolio" class="text-blue-800 hover:text-blue-600 transition-colors" role="menuitem" aria-label="Navigate to portfolio section">Portfolio</a>
+                    <a href="#blog" class="text-blue-800 hover:text-blue-600 transition-colors" role="menuitem" aria-label="Navigate to blog section">Blog</a>
+                    <a href="#services" class="text-blue-800 hover:text-blue-600 transition-colors" role="menuitem" aria-label="Navigate to services section">Services</a>
+                    <a href="#contact" class="text-blue-800 hover:text-blue-600 transition-colors" role="menuitem" aria-label="Navigate to contact section">Contact</a>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-blue-800" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="text-blue-800 hover:text-blue-600">Home</a>
+                    <a href="#about" class="text-blue-800 hover:text-blue-600">About</a>
+                    <a href="#team" class="text-blue-800 hover:text-blue-600">Team</a>
+                    <a href="#portfolio" class="text-blue-800 hover:text-blue-600">Portfolio</a>
+                    <a href="#blog" class="text-blue-800 hover:text-blue-600">Blog</a>
+                    <a href="#services" class="text-blue-800 hover:text-blue-600">Services</a>
+                    <a href="LMS" class="text-blue-800 hover:text-blue-600">LMS</a>
+                    
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Reviving Essential Skills</h1>
+                <p class="text-xl md:text-2xl mb-8">Empowering individuals through Quran, Seerah, and modern science</p>
+                
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-8 mb-10">
+                    <p class="text-lg italic">
+                        "Muslim Revive Skills (MRS) is an academy and professional team dedicated to reviving essential skills from the Quran, Seerah of Prophet Muhammad ﷺ, and modern science. We empower individuals with critical thinking, emotional intelligence, AI & technology skills, career development, and consultancy."
+                    </p>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#team" class="btn-primary px-8 py-4 rounded-full font-semibold text-blue-900 shadow-lg">
+                        Explore Our Team
+                    </a>
+                    <a href="#services" class="bg-white bg-opacity-20 px-8 py-4 rounded-full font-semibold text-white shadow-lg hover:bg-opacity-30 transition-all">
+                        View Services
+                    </a>
+                    <a href="#contact" class="border-2 border-white px-8 py-4 rounded-full font-semibold text-white shadow-lg hover:bg-white hover:text-blue-900 transition-all">
+                        Join Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-blue-800 mb-4">About MRS</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Dedicated to empowering individuals through comprehensive skill development</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12 mb-16">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center card-hover">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bullseye text-2xl text-blue-800"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Our Mission</h3>
+                    <p class="text-gray-600">To revive essential skills from Islamic traditions combined with modern scientific knowledge for holistic personal and professional development.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center card-hover">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-eye text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Our Vision</h3>
+                    <p class="text-gray-600">To create a generation of skilled Muslims who excel in both spiritual and worldly matters, contributing positively to society.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center card-hover">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-trophy text-2xl text-orange-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Our Objectives</h3>
+                    <p class="text-gray-600">Provide quality education, foster critical thinking, develop technical skills, and offer career guidance to Muslim youth worldwide.</p>
+                </div>
+            </div>
+            
+            <div class="bg-blue-50 rounded-2xl p-8 md:p-12">
+                <h3 class="text-3xl font-bold text-blue-800 text-center mb-8">Courses & Programs</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm flex items-center">
+                        <i class="fas fa-laptop-code text-blue-600 text-2xl mr-4"></i>
+                        
+                             <a href="https://youtube.com/playlist?list=PL9XvIvvVL50Eb43gIMEngKmgWGtxfQypS&si=-3rN2gBPvEOG8bRq">AI & Machine Learning</a>
+                           </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm flex items-center">
+                        <i class="fas fa-chart-line text-green-600 text-2xl mr-4"></i>
+                        
+                        <a href="https://youtu.be/9jkFZPI5puo?si=FGll3XSu3lwMB_0y">Data Science & Analysis</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm flex items-center">
+                        <i class="fas fa-code text-purple-600 text-2xl mr-4"></i>
+                        
+                        <a href="https://youtube.com/playlist?list=PLZPZq0r_RZOPP5Yjt6IqgytMRY5uLt4y3&si=KozOOj5qqPs2oROV">Programming & Web Development</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm flex items-center">
+                        <i class="fas fa-brain text-orange-600 text-2xl mr-4"></i>
+
+                        <a href="https://youtube.com/playlist?list=PLEuj8cszMzGVsL9DiCMcTY82_HLrJ2MBW&si=G8llEYC4G5xWiVDy">AI Machine Learning</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm flex items-center">
+                        <i class="fas fa-heart text-red-600 text-2xl mr-4"></i>
+                           
+                        <a href="https://youtube.com/playlist?list=PLMDvvlp4C4Fuomvg47Mht8bczCtc92ETn&si=BzRQ8ekxihV9xlRX1">Emotional Intelligence</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm flex items-center">
+                        <i class="fas fa-book-open text-indigo-600 text-2xl mr-4"></i>
+                        
+                        <a href="https://payhip.com/ANTIDEVILICENGINEERING/b-account/course/NaoQR/1yz4MrR8Bp">Quran & Seerah Studies</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm flex items-center">
+                        <i class="fas fa-briefcase text-yellow-600 text-2xl mr-4"></i>
+                        
+                        <a href="https://youtu.be/e_rJDECencA?si=jGmdb1i6eBjIP3zw">Career Development</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm flex items-center">
+                        <i class="fas fa-clock text-gray-600 text-2xl mr-4"></i>
+                        
+                        <a href="https://youtube.com/playlist?list=PLrkIrTDd5q7P1897ti7y-UxxAMbWDo3Qr&si=vLzKSmX0QrlNgo9j">Time Management</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm flex items-center">
+                        <i class="fas fa-users text-teal-600 text-2xl mr-4"></i>
+                       
+                        <a href="https://youtu.be/qzoIAJYPQwo?si=zxFIFJtsORZibEhU">Leadership Skills</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-blue-800 mb-4">Our Team</h2>
+                <p class="text-xl text-gray-600">Meet the dedicated professionals behind MRS</p>
+            </div>
+            
+            <!-- Head of MRS -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-16 card-hover">
+                <div class="md:flex">
+                    <div class="md:w-1/3">
+                        <img src="Razman.jpg" alt="Portrait of Muhammad Ramzan - Founder and Head of MRS, a professional computer science graduate with expertise in AI and machine learning" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-2/3 p-8 md:p-12">
+                        <div class="flex items-center mb-6">
+                            <h3 class="text-3xl font-bold text-blue-800 mr-4">Muhammad Ramzan</h3>
+                            <span class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-semibold">Founder & Head</span>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8 mb-8">
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800 mb-3">Education</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-graduation-cap text-blue-600 mt-1 mr-3"></i>
+                                        <span>BSCS - University of Okara (2024)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-book text-blue-600 mt-1 mr-3"></i>
+                                        <span>MPhil AI - PUCIT (Partially Completed)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800 mb-3">Certifications</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-award text-yellow-600 mt-1 mr-3"></i>
+                                        <span>Microsoft Azure AI Fundamentals</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-certificate text-green-600 mt-1 mr-3"></i>
+                                        <span>Coursera Specializations</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-building text-purple-600 mt-1 mr-3"></i>
+                                        <span>Govt. of Punjab Internship (PSER)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-3">Skills & Expertise</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Django</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Data Analysis</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Web Development</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Teaching</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Career Counseling</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Graphic Design</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Digital Marketing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-4">
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-800 hover:bg-blue-800 hover:text-white">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-800 hover:bg-blue-800 hover:text-white">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-800 hover:bg-blue-800 hover:text-white">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Members -->
+            <h3 class="text-2xl font-bold text-blue-800 text-center mb-8">Our Professional Team</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <img src="farhan.jpg" alt="Team Member 1 - Technology instructor specializing in AI and data science with extensive industry experience" class="w-full h-68 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-blue-800 mb-2">Muhammad Farhan &nbsp;&nbsp;&nbsp; محمد فرحان</h4>
+                        <p class="text-gray-600 mb-4">Quran & Seerah Researcher</p>
+                        <div class="flex justify-between items-center">
+                            <a href="farhan back page.html" class="text-blue-600 hover:text-blue-800">View Profile</a>
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-gray-500 hover:text-blue-600">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="text-gray-500 hover:text-blue-600">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <img src="anas.jpg" alt="Team Member 2 - Quran and Seerah studies instructor with deep knowledge of Islamic traditions and modern applications" class="w-full h-68 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-blue-800 mb-2">Muhammad Anas &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;محمد انس</h4>
+                        <p class="text-gray-600 mb-4">Video Editer & Digital Creater & Youtuber</p>
+                        <div class="flex justify-between items-center">
+                            <a href="anas back page-1.html" class="text-blue-600 hover:text-blue-800">View Profile</a>
+                            <div class="flex space-x-2">
+                             
+                                <a href="http://www.youtube.com/@Next-Apply" class="text-gray-600 hover:text-blue-600">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="00000000" class="text-gray-500 hover:text-blue-600">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <img src="rehan.jpeg" alt="Team Member 3 - Career development coach with expertise in emotional intelligence and professional skills training" class="w-full h-68 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-blue-800 mb-2">Rehan Khalid &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ریحان خالد</h4>
+                        <p class="text-gray-600 mb-4">AI & Programming Explorer</p>
+                        <div class="flex justify-between items-center">
+                            <a href="rehan  back page.html" class="text-blue-600 hover:text-blue-800">View Profile</a>
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-gray-500 hover:text-blue-600">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="text-gray-500 hover:text-blue-600">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->        
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <img src="rehman.jpeg" alt="Team Member 4 - Emotional intelligence trainer and career counselor with a focus on personal development" class="w-full h-68 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-blue-800 mb-2">Rahman Ahmad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;رحمان احمد </h4>
+                        <p class="text-gray-600 mb-4">Emotional Intelligence Trainer</p>
+                        <div class="flex justify-between items-center">
+                            <a href="rehman back page.html" class="text-blue-600 hover:text-blue-800">View Profile</a>
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-gray-500 hover:text-blue-600">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="text-gray-500 hover:text-blue-600">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--  Team Member 5-->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <img src="hassaan.jpeg" alt="Team Member 4 - Emotional intelligence trainer and career counselor with a focus on personal development" class="w-full h-68 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-blue-800 mb-2">Muhammad Hassaan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; محمد حسان
+                        <div class="flex justify-between items-center">
+                            <a href="hassaan back page.html" class="text-blue-600 hover:text-blue-800">View Profile</a>
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-gray-500 hover:text-blue-600">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="text-gray-500 hover:text-blue-600">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+
+                            
+                    
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-blue-800 mb-4">Our Portfolio</h2>
+                <p class="text-xl text-gray-600">Showcasing our achievements and successful projects</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 bg-blue-100 relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c655b5e1-8e0c-4144-99b8-f1d9da742130.png" alt="AI-powered educational platform developed by MRS showing interactive learning modules and analytics dashboard" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-blue-800 text-white px-3 py-1 rounded-full text-sm">
+                            AI Project
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Smart Learning Platform</h3>
+                        <p class="text-gray-600 mb-4">An AI-powered educational platform for personalized learning experiences.</p>
+                        <button onclick="openProjectModal(1)" class="text-blue-600 font-semibold hover:text-blue-800">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 bg-green-100 relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/131ec78a-a187-449b-8eca-57f097acc83e.png" alt="Career development web application with resume building tools and job matching features" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-green-800 text-white px-3 py-1 rounded-full text-sm">
+                            Career Tool
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Career Path Builder</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive career development platform with personalized guidance.</p>
+                        <button onclick="openProjectModal(2)" class="text-blue-600 font-semibold hover:text-blue-800">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 bg-purple-100 relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9fffce39-6c07-4de5-97af-8c8846f5ff51.png" alt="Mobile application for Quran study with translation, tafsir, and daily reminder features" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-purple-800 text-white px-3 py-1 rounded-full text-sm">
+                            Islamic App
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Quran Companion App</h3>
+                        <p class="text-gray-600 mb-4">Mobile application for enhanced Quran study and daily spiritual growth.</p>
+                        <button onclick="openProjectModal(3)" class="text-blue-600 font-semibold hover:text-blue-800">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 bg-orange-100 relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fcbea7a4-7b99-4294-94d0-f25ec65bed81.png" alt="Data analytics dashboard showing student performance metrics and learning progress tracking" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-orange-600 text-white px-3 py-1 rounded-full text-sm">
+                            Analytics
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Learning Analytics Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Advanced analytics platform for tracking student progress and performance.</p>
+                        <button onclick="openProjectModal(4)" class="text-blue-600 font-semibold hover:text-blue-800">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 bg-red-100 relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f4d68739-0458-4229-a5e4-f1cc125a2127.png" alt="Emotional intelligence training program interface with assessment tools and progress tracking" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm">
+                            EQ Training
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Emotional Intelligence Program</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive EQ development program with assessment and training modules.</p>
+                        <button onclick="openProjectModal(5)" class="text-blue-600 font-semibold hover:text-blue-800">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 bg-teal-100 relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e2581626-de84-4935-b932-52bfb3e571fc.png" alt="Workshop management system showing event scheduling, registration, and participant management features" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-teal-600 text-white px-3 py-1 rounded-full text-sm">
+                            Workshop System
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Workshop Management System</h3>
+                        <p class="text-gray-600 mb-4">Complete system for organizing, managing, and tracking educational workshops.</p>
+                        <button onclick="openProjectModal(6)" class="text-blue-600 font-semibold hover:text-blue-800">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-blue-800 mb-4">Latest Updates</h2>
+                <p class="text-xl text-gray-600">Stay updated with our latest news, insights, and events</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7b986ab8-71a9-4bd2-9aef-859c1aaf03ee.png" alt="Artificial intelligence workshop participants engaged in hands-on learning activities with laptops and interactive displays" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-blue-800 text-white px-3 py-1 rounded-full text-sm">
+                            Workshop
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="text-sm text-gray-500">October 15, 2023</span>
+                            <span class="mx-2 text-gray-400">•</span>
+                            <span class="text-sm text-blue-600">AI & Technology</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-800 mb-3">Successful AI Workshop Concluded</h3>
+                        <p class="text-gray-600 mb-4">Our recent AI workshop attracted over 50 participants with hands-on machine learning experience.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800">Read More</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6719a27b-7eec-4ff2-a32f-586e13176b36.png" alt="Group of students participating in career development session with facilitator guiding them through exercises" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-green-800 text-white px-3 py-1 rounded-full text-sm">
+                            Career Development
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="text-sm text-gray-500">September 28, 2023</span>
+                            <span class="mx-2 text-gray-400">•</span>
+                            <span class="text-sm text-green-600">Career Guidance</span>
+                        </div>  
+                        <h3 class="text-xl font-semibold text-blue-800 mb-3">New Career Counseling Program Launched</h3>
+                        <p class="text-gray-600 mb-4">We've launched a comprehensive career counseling program to help students navigate their professional paths.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800">Read More</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/82dca077-dcea-48bb-a6a4-daac852b7cd5.png" alt="Islamic studies classroom with students engaged in discussion about Quranic teachings and modern applications" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-purple-800 text-white px-3 py-1 rounded-full text-sm">
+                            Islamic Studies
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="text-sm text-gray-500">September 10, 2023</span>
+                            <span class="mx-2 text-gray-400">•</span>
+                            <span class="text-sm text-purple-600">Quran & Science</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-800 mb-3">Integrating Quranic Wisdom with Modern Science</h3>
+                        <p class="text-gray-600 mb-4">Exploring how traditional Islamic knowledge complements and enhances modern scientific understanding.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800">Read More</a>
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-blue-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors">
+                    View All Updates
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-blue-800 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600">Comprehensive solutions for personal and professional development</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="bg-blue-50 p-8 rounded-2xl text-center card-hover">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-laptop-code text-blue-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Technical Training</h3>
+                    <p class="text-gray-600 mb-6">AI, Data Science, Programming, Web Development, and IT skills training with hands-on projects.</p>
+                    <a href="#consultation" class="text-blue-600 font-semibold hover:text-blue-800">Learn More</a>
+                </div>
+                
+                <div class="bg-green-50 p-8 rounded-2xl text-center card-hover">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-book-open text-green-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Islamic Studies</h3>
+                    <p class="text-gray-600 mb-6">Quranic studies, Seerah of Prophet Muhammad ﷺ, and integration with modern knowledge.</p>
+                    <a href="#consultation" class="text-blue-600 font-semibold hover:text-blue-800">Learn More</a>
+                </div>
+                
+                <div class="bg-orange-50 p-8 rounded-2xl text-center card-hover">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-briefcase text-orange-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Career Development</h3>
+                    <p class="text-gray-600 mb-6">Career counseling, resume building, interview preparation, and job placement assistance.</p>
+                    <a href="#consultation" class="text-blue-600 font-semibold hover:text-blue-800">Learn More</a>
+                </div>
+                
+                <div class="bg-purple-50 p-8 rounded-2xl text-center card-hover">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-brain text-purple-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Soft Skills Training</h3>
+                    <p class="text-gray-600 mb-6">Critical thinking, emotional intelligence, communication, and leadership skills development.</p>
+                    <a href="#consultation" class="text-blue-600 font-semibold hover:text-blue-800">Learn More</a>
+                </div>
+                
+                <div class="bg-red-50 p-8 rounded-2xl text-center card-hover">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-red-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Workshops & Seminars</h3>
+                    <p class="text-gray-600 mb-6">Regular workshops on various topics including technology, personal development, and Islamic studies.</p>
+                    <a href="#consultation" class="text-blue-600 font-semibold hover:text-blue-800">Learn More</a>
+                </div>
+                
+                <div class="bg-teal-50 p-8 rounded-2xl text-center card-hover">
+                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-teal-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Consultancy Services</h3>
+                    <p class="text-gray-600 mb-6">Professional consultancy for educational institutions, businesses, and individual clients.</p>
+                    <a href="#consultation" class="text-blue-600 font-semibold hover:text-blue-800">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Consultation Booking -->
+            <div id="consultation" class="bg-blue-800 text-white rounded-2xl p-8 md:p-12">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-6">Book a Consultation</h3>
+                        <p class="text-blue-100 mb-6">Schedule a meeting with our experts for personalized guidance and support.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-calendar-check"></i>
+                                </div>
+                                <span>Flexible scheduling options</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <span>30/60 minute sessions available</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <span>Online video consultations</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6">
+                        <form id="consultation-form" class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Consultation Type</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                                    <option>Career Counseling</option>
+                                    <option>Technical Guidance</option>
+                                    <option>Islamic Studies</option>
+                                    <option>Skill Development</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Preferred Date & Time</label>
+                                <input type="datetime-local" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                            </div>
+                            <button type="submit" class="w-full bg-blue-800 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                                Schedule Consultation
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-blue-800 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600">We'd love to hear from you. Contact us for any inquiries.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-6">Contact Information</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-800"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Address</h4>
+                                <p class="text-gray-600">Education Street, Okara, Punjab, Pakistan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-blue-800"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Phone</h4>
+                                <p class="text-gray-600">+92 3439724951</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-blue-800"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Email</h4>
+                                <p class="text-gray-600">muslimreviveskills@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fab fa-whatsapp text-blue-800"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">WhatsApp</h4>
+                                <p class="text-gray-600">
+                                    <a href="https://wa.me/923439724951" class="text-blue-600 hover:text-blue-800">Chat with us</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-gray-800 mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-800 hover:bg-blue-800 hover:text-white">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-800 hover:bg-blue-800 hover:text-white">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-800 hover:bg-blue-800 hover:text-white">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-800 hover:bg-blue-800 hover:text-white">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-icon w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-800 hover:bg-blue-800 hover:text-white">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-md">
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-6">Send us a Message</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Full Name</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Email Address</label>
+                            <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Subject</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Message</label>
+                            <textarea rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-800 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-3">
+                            <span class="text-blue-900 font-bold">MRS</span>
+                        </div>
+                        <span class="text-xl font-semibold">Muslim Revive Skills</span>
+                    </div>
+                    <p class="text-blue-200 mb-6">Empowering individuals through comprehensive skill development combining traditional Islamic knowledge with modern science.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon w-8 h-8 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon w-8 h-8 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon w-8 h-8 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon w-8 h-8 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-blue-200 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-blue-200 hover:text-white">About Us</a></li>
+                        <li><a href="#team" class="text-blue-200 hover:text-white">Our Team</a></li>
+                        <li><a href="#services" class="text-blue-200 hover:text-white">Services</a></li>
+                        <li><a href="#contact" class="text-blue-200 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-blue-200 hover:text-white">Technical Training</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Islamic Studies</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Career Development</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Consultancy</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Workshops</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Newsletter</h4>
+                    <p class="text-blue-200 mb-4">Subscribe to our newsletter for updates and insights.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 bg-blue-800 border border-blue-700 rounded-l-lg text-white placeholder-blue-300">
+                        <button type="submit" class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-500">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-12 pt-8 text-center text-blue-200">
+                <p>© 2023 MRS - Muslim Revive Skills. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 modal opacity-0 invisible transition-all duration-300">
+        <div class="bg-white rounded-xl max-w-4xl mx-4 max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 id="modal-title" class="text-2xl font-bold text-blue-800">Project Title</h3>
+                    <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                <img id="modal-image" src="" alt="" class="w-full h-64 object-cover rounded-lg mb-6">
+                <div id="modal-content" class="prose">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking links
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Project data
+        const projects = {
+            1: {
+                title: "Smart Learning Platform",
+                image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7ccdbccf-15ea-417c-a753-ff00796c111a.png",
+                content: `
+                    <p>An AI-powered educational platform that provides personalized learning experiences tailored to each student's needs and learning style.</p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Adaptive learning algorithms</li>
+                        <li>Real-time progress tracking</li>
+                        <li>Interactive content delivery</li>
+                        <li>Automated assessment system</li>
+                        <li>Learning analytics dashboard</li>
+                    </ul>
+                    <h4>Technologies Used:</h4>
+                    <p>Python, Django, React, Machine Learning, PostgreSQL</p>
+                `
+            },
+            2: {
+                title: "Career Path Builder",
+                image: "https://placehold.co/800x400",
+                content: `
+                    <p>A comprehensive career development platform that helps students navigate their professional journey with personalized guidance.</p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Skills assessment tools</li>
+                        <li>Career pathway recommendations</li>
+                        <li>Resume building assistance</li>
+                        <li>Interview preparation resources</li>
+                        <li>Job market insights</li>
+                    </ul>
+                    <h4>Technologies Used:</h4>
+                    <p>JavaScript, Node.js, MongoDB, Express, React</p>
+                `
+            },
+            3: {
+                title: "Quran Companion App",
+                image: "https://placehold.co/800x400",
+                content: `
+                    <p>A mobile application designed to enhance Quran study with modern technology while maintaining traditional Islamic values.</p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Multiple translation options</li>
+                        <li>Tafsir (exegesis) integration</li>
+                        <li>Daily verse reminders</li>
+                        <li>Recitation tracking</li>
+                        <li>Study group functionality</li>
+                    </ul>
+                    <h4>Technologies Used:</h4>
+                    <p>React Native, Firebase, Quran API, JavaScript</p>
+                `
+            },
+            4: {
+                title: "Learning Analytics Dashboard",
+                image: "https://placehold.co/800x400",
+                content: `
+                    <p>An advanced analytics platform that provides detailed insights into student performance and learning patterns.</p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Real-time performance metrics</li>
+                        <li>Predictive analytics</li>
+                        <li>Custom reporting tools</li>
+                        <li>Progress visualization</li>
+                        <li>Early intervention alerts</li>
+                    </ul>
+                    <h4>Technologies Used:</h4>
+                    <p>Python, Data Science libraries, D3.js, PostgreSQL</p>
+                `
+            },
+            5: {
+                title: "Emotional Intelligence Program",
+                image: "https://placehold.co/800x400",
+                content: `
+                    <p>A comprehensive EQ development program that combines assessment tools with personalized training modules.</p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Emotional intelligence assessment</li>
+                        <li>Personalized development plans</li>
+                        <li>Interactive training modules</li>
+                        <li>Progress tracking</li>
+                        <li>Certification upon completion</li>
+                    </ul>
+                    <h4>Technologies Used:</h4>
+                    <p>JavaScript, React, Node.js, MongoDB, Psychology APIs</p>
+                `
+            },
+            6: {
+                title: "Workshop Management System",
+                image: "https://placehold.co/800x400",
+                content: `
+                    <p>A complete system for organizing, managing, and tracking educational workshops and training sessions.</p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Event scheduling and management</li>
+                        <li>Participant registration</li>
+                        <li>Attendance tracking</li>
+                        <li>Feedback collection</li>
+                        <li>Certificate generation</li>
+                    </ul>
+                    <h4>Technologies Used:</h4>
+                    <p>Django, Python, React, PostgreSQL, HTML/CSS</p>
+                `
+            }
+        };
+
+        // Modal functions
+        function openProjectModal(projectId) {
+            const project = projects[projectId];
+            if (project) {
+                document.getElementById('modal-title').textContent = project.title;
+                document.getElementById('modal-image').src = project.image;
+                document.getElementById('modal-image').alt = project.title + ' project showcase';
+                document.getElementById('modal-content').innerHTML = project.content;
+                
+                const modal = document.getElementById('project-modal');
+                modal.classList.remove('opacity-0', 'invisible');
+                modal.classList.add('opacity-1', 'visible');
+            }
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('project-modal');
+            modal.classList.remove('opacity-1', 'visible');
+            modal.classList.add('opacity-0', 'invisible');
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('project-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Form submission handling
+        document.getElementById('consultation-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Consultation request submitted successfully! We will contact you shortly.');
+            this.reset();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animation
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
+
